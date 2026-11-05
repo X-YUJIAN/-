@@ -293,6 +293,7 @@ const GROUPS = {
 };
 const listEl = document.getElementById("list");
 const X_URL = "https://x.com/YUJIAN386";
+const PAGE_URL = "https://x-yujian.github.io/-/JSSXTP.html";
 const CREDIT = "内容取自 X 平台：隅见的文章《BDSM 的心理探究与思考》";
 const qEl = document.getElementById("q");
 const clearEl = document.getElementById("clear");
@@ -502,7 +503,7 @@ function shareText(r){
   r.fulfill.forEach(x => out.push("• " + x));
   out.push("", "日常关系中的应对方式");
   r.normal.forEach(x => out.push("• " + x));
-  out.push("", CREDIT, X_URL);
+  out.push("", CREDIT, PAGE_URL);
   return out.join("\n");
 }
 
@@ -635,7 +636,7 @@ function paintImage(ctx, r, draw){
   });
   y += 10;
   setF(18, 500, F_SANS);
-  if(draw){ ctx.fillStyle = C_ACCENT; ctx.fillText(X_URL, PAD, y); }
+  if(draw){ ctx.fillStyle = C_ACCENT; ctx.fillText(PAGE_URL, PAD, y); }
   y += 30;
   y += 56;
   return y;
